@@ -1,6 +1,6 @@
 
 tasks:
-  - init:  mkdir dev && cd dev && composer create-project phpmyadmin/phpmyadmin && cd .. && mysqladmin -u root password 'gitpod';
+  - init:   mysqladmin -u root password 'gitpod'  && mkdir dev && cd dev && composer create-project phpmyadmin/phpmyadmin && cd ..;
     command: cd dev/phpmyadmin && php -S localhost:8085
 image:
   file: .gitpod.Dockerfile
