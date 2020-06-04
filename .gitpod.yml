@@ -1,6 +1,6 @@
 
 tasks:
   - init:   mysqladmin -u root password 'gitpod';
-    command: cd dev/phpmyadmin && php -S localhost:8085
+    command: cd dev/ && php -S localhost:8085
 image:
   file: .gitpod.Dockerfile
